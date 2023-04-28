@@ -107,7 +107,7 @@ export default{}
     align-content: space-around;
     justify-content: space-around;
     flex-direction: column;
-    background: whitesmoke;
+    background: linear-gradient(85deg, white, whitesmoke);
 }
 
 .text{
