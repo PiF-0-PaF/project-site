@@ -17,6 +17,7 @@
             <path d="M0 68.8172V57.3477H80V68.8172H0ZM0 40.1434V28.6738H80V40.1434H0ZM0 11.4695V0H80V11.4695H0Z" fill="black"/>
             </svg>
         </div>
+        
         <div class="pravaya_chast">
             <svg class="icons" width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M40 64C31.6667 64 24.3 59.7333 20 53.3333C20.1 46.6667 33.3334 43 40 43C46.6667 43 59.9 46.6667 60 53.3333C57.7963 56.6147 54.8195 59.3038 51.3319 61.1639C47.8442 63.024 43.9527 63.998 40 64ZM40 16.6667C42.6522 16.6667 45.1957 17.7202 47.0711 19.5956C48.9465 21.471 50 24.0145 50 26.6667C50 29.3188 48.9465 31.8624 47.0711 33.7377C45.1957 35.6131 42.6522 36.6667 40 36.6667C37.3479 36.6667 34.8043 35.6131 32.929 33.7377C31.0536 31.8624 30 29.3188 30 26.6667C30 24.0145 31.0536 21.471 32.929 19.5956C34.8043 17.7202 37.3479 16.6667 40 16.6667ZM40 6.66666C35.6226 6.66666 31.2881 7.52885 27.2439 9.20401C23.1997 10.8792 19.5251 13.3345 16.4298 16.4298C10.1786 22.681 6.66669 31.1594 6.66669 40C6.66669 48.8405 10.1786 57.319 16.4298 63.5702C19.5251 66.6655 23.1997 69.1208 27.2439 70.796C31.2881 72.4711 35.6226 73.3333 40 73.3333C48.8406 73.3333 57.319 69.8214 63.5702 63.5702C69.8215 57.319 73.3334 48.8405 73.3334 40C73.3334 21.5667 58.3334 6.66666 40 6.66666Z" fill="black"/>
@@ -27,43 +28,42 @@
    <div class="content">
         <div class="item">
             <img src="@/assets/tovar1.png" alt="">
-            <div class="text">Процессор</div>
+            <div class="text">AMD Ryzen 5</div>
         </div>
         <div class="item">
             <img src="@/assets/tovar2.png" alt="">
-            <div class="text">Процессор</div>
+            <div class="text">Intel Core i5</div>
         </div>
         <div class="item">
             <img src="@/assets/tovar3.png" alt="">
-            <div class="text">Монитор</div>
+            <div class="text">DELL h27s</div>
         </div>
         <div class="item">
             <img src="@/assets/tovar4.png" alt="">
-            <div class="text">Монитор</div>
+            <div class="text">DELL h21</div>
         </div>
         <div class="item">
             <img src="@/assets/tovar5.png" alt="">
-            <div class="text">Оперативная память</div>
+            <div class="text">Samsung G15RT43</div>
         </div>
         <div class="item">
             <img src="@/assets/tovar6.png" alt="">
-            <div class="text">Оперативная память</div>
+            <div class="text">KINGSTON FURY</div>
         </div>
         <div class="item">
             <img src="@/assets/tovar7.png" alt="">
-            <div class="text">Жесткий диск</div>
+            <div class="text">SEAGATE SkyHawk</div>
         </div>
         <div class="item">
             <img src="@/assets/tovar8.png" alt="">
-            <div class="text">Жесткий диск</div>
+            <div class="text">Western Digital</div>
         </div>
         
    </div>
 </template>
 <script>
-export default{
+export default{}
 
-}
 </script>
 <style scoped>
 
