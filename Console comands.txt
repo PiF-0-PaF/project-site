@@ -1,0 +1,3 @@
+npm run build - билд проекта
+npm run serve - запуск сборки на локалке
+npx json-server --watch db.json - отслеживание и присвоение фек апи
