@@ -60,54 +60,54 @@
                 </svg>
                 <div>Жесткий диск</div>
             </div>
-        </div>
-        
+        </div>     
    </div>
 
-   <div class="content">
-        <div class="item">
-            <img src="@/assets/tovar1.png" alt="">
-            <div class="text">AMD Ryzen 5</div>
-        </div>
-        <div class="item">
-            <img src="@/assets/tovar2.png" alt="">
-            <div class="text">Intel Core i5</div>
-        </div>
-        <div class="item">
-            <img src="@/assets/tovar3.png" alt="">
-            <div class="text">DELL h27s</div>
-        </div>
-        <div class="item">
-            <img src="@/assets/tovar4.png" alt="">
-            <div class="text">DELL h21</div>
-        </div>
-        <div class="item">
-            <img src="@/assets/tovar5.png" alt="">
-            <div class="text">Samsung G15RT43</div>
-        </div>
-        <div class="item">
-            <img src="@/assets/tovar6.png" alt="">
-            <div class="text">KINGSTON FURY</div>
-        </div>
-        <div class="item">
-            <img src="@/assets/tovar7.png" alt="">
-            <div class="text">SEAGATE SkyHawk</div>
-        </div>
-        <div class="item">
-            <img src="@/assets/tovar8.png" alt="">
-            <div class="text">Western Digital</div>
-        </div>
-        
+   <Catalog_item></Catalog_item>
+   <div class="korzinka">
+        <Korzina_site 
+        v-if="CART.length"
+        :cart_data="CART"/>
    </div>
+   
+
 </template>
+
 <script>
-export default{}
+
+import Catalog_item from './Catalog_item.vue'
+import Korzina_site from './Korzina_site.vue'
+import { mapGetters } from 'vuex'
+
+    export default{
+        name: 'Main_page',
+        components: {
+            Catalog_item,
+            Korzina_site
+        },
+        props: {},
+        data() {
+            return {
+                title: 'Main_page'
+            }
+        },
+        computed: {
+            ...mapGetters ([
+                'CART'
+            ])
+        },
+        methods: {},
+        watch: {},
+        mounted() {
+            console.log('Hello ya zhiv!!!')
+        }    
+    }
 
 </script>
-<style scoped>
+
+<style>
 
 .header{
-
     width: 100%;
     height: 100px;
     display: flex;
@@ -141,40 +141,9 @@ export default{}
     transition: 0.5s; /* Время эффекта */
     display: block; /* Убираем небольшой отступ снизу */   
 }
+
 .icons:hover{
     transform: scale(0.8); /* Увеличиваем масштаб */
-}
-
-.content{
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    flex-wrap: wrap;
-    align-content: space-around;
-    justify-content: space-around;
-    flex-direction: column;
-    background: linear-gradient(85deg, white, whitesmoke);
-}
-
-.text{
-    font-size: 24px;
-    font-weight: 400;
-    font-family: cursive;
-    color: white;
-    background-color: grey;
-}
-
-.item{
-    margin-top: 50px;
-    cursor: pointer;
-    display: inline-block; /* Строчно-блочный элемент */
-    overflow: hidden; /* Скрываем всё за контуром */
-    transition: 1s; /* Время эффекта */
-    display: block; /* Убираем небольшой отступ снизу */
-    
-}
-.item:hover{
-    transform: scale(1.2); /* Увеличиваем масштаб */
 }
 
 .category{
@@ -198,5 +167,15 @@ export default{}
 .category_icon{
     cursor: pointer;
 }
+.korzinka {
+    display: flex;
+    max-width: 100%;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    margin: 25px;
+    margin-bottom: 20px;
 
+}
 </style>
